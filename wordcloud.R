@@ -1,10 +1,11 @@
+# R program to create word count
 library(readr)
 library(tm)
 library(wordcloud)
 library(png)
 
 cat("Read data ...\n")
-reviews <- read_csv('E:/kiran/amazon-fine-foods/Reviews.csv')
+reviews <- read_csv('E:/shobhit/amazonfinefoods/Reviews.csv')
 
 # Many products have multiple productIds and their reviews have multiple copies
 uniqReviews <- unique(reviews[, 3:10])
